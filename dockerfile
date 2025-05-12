@@ -9,3 +9,7 @@ RUN chown -R www-data:www-data /var/www/html
 
 # Exponer el puerto 80 (opcional, Render ya lo hace por ti)
 EXPOSE 80
+
+
+RUN chmod -R 755 /var/www/html
+RUN chown -R www-data:www-data /var/www/html
