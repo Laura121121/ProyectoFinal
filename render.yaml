@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mi-proyecto-php
+    env: docker
+    plan: free
+    branch: main
+    dockerfilePath: Dockerfile
+    buildCommand: ""     # Render ejecutará 'docker build' automáticamente
+    startCommand: ""     # Render usará el CMD o ENTRYPOINT de tu Dockerfile
+    healthCheckPath: /   # Puedes ajustar si necesitas otra ruta para healthcheck
